@@ -1,3 +1,18 @@
+body {
+    font-size:14px;
+    font-family: 'Indie Flower', cursive;
+    line-height:2em;
+}
+section {
+    padding-top:30px;
+    padding-bottom:30px;
+}
+header {
+    padding-top:20px;
+    padding-bottom:20px;
+    height: 100vh;
+}
+/*HEADER STYLE*/
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
@@ -13,4 +28,24 @@
 }
 .navbar-nav>li>a {
     margin:10px;
+    font-size:180%;
 }
+#header-describ{
+    position: relative;
+    top:5vh;
+}
+#title{
+    font-size:900%;
+}
+#links{
+    position: relative;
+    top:20vh;
+}
+#links a {
+    margin:30px;
+    font-size:130%;
+}
+.sub-title{
+    font-size:200%;
+}
+/*END HEADER STYLE*/
