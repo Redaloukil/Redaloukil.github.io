@@ -8,10 +8,8 @@ $(document).ready(function(){
       });
     $('.index').click(function () {
         var $href = $(this).attr('href');
-        console.log("hooop")
         $('body').stop().animate({
           scrollTop: $($href).offset().top
         }, 1000);
-        return false;
     });
 })

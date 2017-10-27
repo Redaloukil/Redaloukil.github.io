@@ -4,11 +4,11 @@ body {
     line-height:2em;
 }
 section {
-    padding-top:60px;
-    padding-bottom:60px;
+    padding-top:40px;
+    padding-bottom:40px;
 }
 header {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),url("../img/1.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),url("../img/1.jpg");
     background-attachment:fixed;
     background-size:cover;
     padding-top:20px;
@@ -96,10 +96,41 @@ p {
 #about{
     background-color:#f4f4f4;
 }
+.about-section {
+    padding: 20px 10px 20px 10px;
+}
 /*END ABOUT STYLE*/
 
 /*SKILLS STYLE*/
 .skills-text {
-    border-left :2px solid#CF000F;
+   
 }
 /*END SKILLS STYLE*/
+/*PROJECTS STYLE*/
+#projects {
+    background-color:#CF000F;
+    opacity:0.9;
+}
+.project-item{
+    background-color:#f4f4f4;
+    padding:20px 5px 10px 20px;
+    margin-top:2%;
+    min-height:35vh;
+    border-left:5px solid black;
+    border-radius:4px;
+}
+.project-item img {
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.2);
+}
+#projects h1 {
+    color: white;
+}
+/*END PROJECTS STYLE*/
+/*CONTACT STYLE*/
+footer {
+    padding-top:30px;
+    padding-bottom:30px;
+    background-color:#333;
+    color:white;
+}
+/*END CONTACT STYLE*/
