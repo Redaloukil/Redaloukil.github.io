@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!--HEADER-->
-        <header>
-            <nav class="navbar navbar-default">
+        <header id="home">
+            <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container-fluid">
                   <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -23,36 +24,46 @@
                         </button>
                     </div>
               
-                  <!-- Collect the nav links, forms, and other content for toggling -->
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a class="index" href="#home">Home <span class="sr-only">(current)</span></a></li>
+                        <li><a class="index" href="#about">About</a></li>
+                        <li><a class="index" href="#skills">Skills</a></li>
+                        <li><a class="index" href="#projects">Projects</a></li>
+                        <li><a class="index" href="#contact">Contact</a></li>
                     </ul>
-                    
-                     
-                      
-                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
               </nav>
               <div id="header-describ" class="text-center">
-                <h2 class="sub-title">Lorem Ipsum est simplement du faux texte</h2>
+                <h2 class="sub-title">Hi,My name is</h2>
                 <h1 id="title">LOUKIL REDA</h1>
-                <h2 class="sub-title">Rouh targoud wena nghatik & tasbah b khire</h2>
+                <h2 class="sub-title">Web Developer, Designer & Freelencer</h2>
               </div>
               <div id="links" class="text-center">
-                  <a href="">Linked-in</a>
-                  <a href="">Twitter</a>
-                  <a href="">Github</a>
+                    <a href="">
+                        Linked-in
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="">
+                        Twitter
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="">
+                        Github
+                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="">
+                        Facebook
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
               </div>
         </header>
         <!--END HEADER-->
         <!--ABOUT-->
-        <section class="text-center">
-            <h1>About Reda Loukil</h1>
+        <section id="about">
+            <h1 class="section-title">About</h1>
             <div class="container">
                 <div class="col-sm-3 about-section">
                     <h1 class="">Web Developer</h1>
@@ -76,14 +87,13 @@
         <!--END ABOUT-->
         <!--SKILLS-->
         <section id="skills">
+            <h1 class="section-title">Skills</h1>
             <div class="container">
-                <h1 class="text-center">My Skills</h1>
-                <div class="col-sm-5"></div>
-                <div class="col-sm-7">
+                <div class="col-sm-5">Mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte</div>
+                <div class="skills-text col-sm-7">
                     <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
-                            
-                            Pourquoi l'utiliser?
-                            On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard.</p>
+                        Pourquoi l'utiliser?
+                        On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard.</p>
                 </div>
             </div>
         </section>
@@ -91,7 +101,7 @@
         <!--PROJECTS-->
         <section id="projects">
             <div class="container text-center">
-                <h1>My Projects</h1>
+                <h1 class="section-title">My Projects</h1>
                 <div class="col-sm-3 project-item">
                     item    
                 </div>
@@ -108,13 +118,15 @@
                     item
                 </div>
             </div>
-        </div>
+        </section>
         <!--END PROJECTS-->
         <!--FOOTER-->
-        <footer class="text-center">
+        <footer id="contact" class="text-center">
             footer
         </footer>
         <!--END FOOTER-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>
