@@ -7,6 +7,7 @@ $(document).ready(function(){
         });
       });
     $('.index').click(function () {
+        console.log("hooooooooooop")
         var $href = $(this).attr('href');
         $('body').stop().animate({
           scrollTop: $($href).offset().top

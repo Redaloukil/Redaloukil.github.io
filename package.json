@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"webpack js/app.js dist/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Redaloukil/Redaloukil.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Redaloukil/Redaloukil.github.io/issues"
+  },
+  "homepage": "https://github.com/Redaloukil/Redaloukil.github.io#readme",
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
+}
