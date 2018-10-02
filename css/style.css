@@ -1,157 +1,120 @@
 body {
-    font-size:14px;
-    font-family: 'Indie Flower', cursive;
-    line-height:2em;
+    font-family: 'Varela Round', sans-serif;
+    font-size:18px;
+    letter-spacing:0.5rm;
+    line-height :1.8rem;
+    
 }
-section {
-    padding-top:40px;
-    padding-bottom:40px;
-}
-header {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),url("../img/1.jpg");
-    background-attachment:fixed;
-    background-size:cover;
-    padding-top:20px;
-    padding-bottom:20px;
-    height: 100vh;
+span {
+    
 }
 h1 {
-    font-size:180%;
-    color:#CF000F;
+    font-size:180;
 }
-p {
-    font-size:120%;
-}
-.navbar-fixed-top.scrolled {
-    background-color: #333 !important;
-    transition: background-color 200ms linear;
-    z-index: 999;
-    box-shadow: 1px 2px 10px rgba(0,0,0,0.4);
-}
-.section-title{
-    font-size:250%;
-    text-decoration:underline;
-    text-align:center;
-    display:block;
+main {
+    width:100%;
+    height:100%;
+    overflow-y: hidden;
 }
 
-/*HEADER STYLE*/
-.navbar .navbar-nav {
+li {
+    list-style:none;
+}
+
+#profile {
+    padding:1% 3%;
+}
+#profile img{
+    margin-bottom:10px;
+}
+
+#left-side {
+    background-color:#6e0d25;
+    height: 100vh;
+    display:inline-block;
+    float: left;
+    padding:2% 0;
+    text-align:center;
+    color: white;
+    box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+#right-side {
+    height: 100vh;
+    float: left;
+    padding:4% 4%;
+    background-color: #fffffc;
+
+}
+#logo {
+    padding: 3%;
+    color: #333;
+    border-radius:4px;
     display: inline-block;
-    float: none;
-    vertical-align: center;
+    background-color: #f4f4f4;
 }
-.navbar {
-    max-height:45px;
-}  
-.navbar .navbar-collapse {
-    text-align: center;
+#image {
+    border-radius:50%;
+    border:4px solid #f0e100;
 }
-.navbar-default .navbar-nav>li>a{
+
+.nav-list {
+    padding:4% 0;
+    font-size:160%;
+}
+
+.nav-link {
+    padding:4% 7%;
+    cursor: pointer;
+    background-color:#333;
+    color:white !important;
+    border-bottom: 1px solid white;
+}
+.nav-link:hover {
+    padding-right:10%;
+    border-left:4px solid white;
+    transition: 0.3s;
+}
+
+#navbar {
+    text-align:left;
+    margin:20% 0;
+    padding:0;
+}
+#socials {
+    font-size:300%;
+}
+#socials a{
     color: white;
 }
-.navbar-default{
-    background-color:transparent;
-    border:0px;
+#right-side {
+    display:inline-block;
+    height: 100vh;
+    overflow-y:scroll;
+    overflow-x: hidden;
 }
-.navbar-nav>li>a {
-    margin-right:15px;
-    margin-left:15px;
-    font-size:180%;
+#profile-img {
+    float: left;
+    padding:0;
 }
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-    color:white;
-    text-decoration:underline;
-}
-#header-describ{
-    position: relative;
-    top:15vh;
-    color:white;
-}
-#title{
-    font-size:1000%;
-    color:#CF000F;
-    text-decoration:none;
-}
-#links{
-    position: relative;
-    top:25vh;
-}
-#links a {
-    margin:30px;
-    font-size:180%;
-    color:white;
-}
-#links a:hover {
-    text-decoration:none;
-    color: #CF000F;
-    transition:0.4s;
-}
-.sub-title{
-    font-size:250%;
-    opacity:0.8;
-}
-/*END HEADER STYLE*/
-/*ABOUT STYLE*/
-#about{
-    background-color:#f4f4f4;
-}
-.about-section {
-    padding: 20px 10px 20px 10px;
-}
-/*END ABOUT STYLE*/
-
-/*SKILLS STYLE*/
-.skills-text {
-   
-}
-/*END SKILLS STYLE*/
-/*PROJECTS STYLE*/
-#projects {
-    background-image:url("../img/haff.png");
-    background-repeat: repeat-x repeat-y;
-    opacity:0.9;
-    
-}
-.project-image {
-    background-size:cover;
-    height:40vh;
-}
-#first {
-    background-image:url("../img/donation.png");
-}
-#second {
-    background-image:url("../img/lhouari2.png");
-}
-.project-item{
-    background-color:#fff;
-    margin-top:1%;
-    
-    border-radius:4px;
-    box-shadow: 1px 2px 10px rgba(0,0,0,0.2);
-}
-.project-item h2 {
-    font-size:150%;
-    color: #CF000F;
-}
-#projects h1 {
-    color: #CF000F;
-}
-.project-text {
-    box-shadow: 1px 2px 10px rgba(0,0,0,0.2);
-    background-color:#fff;
-    padding:20px 60px 20px 60px;
-    margin-top:2%;
-    border-radius:4px;
-    font-size:150%;
+#socials {
+    text-align: center;
 }
 
-/*END PROJECTS STYLE*/
-/*CONTACT STYLE*/
-footer {
-    padding-top:30px;
-    padding-bottom:30px;
-    background-color:#333;
-    color:white;
+#socials-list {
+    text-align: center;
 }
-/*END CONTACT STYLE*/
+
+.social {
+    display: inline-block;
+}
+
+.box {
+    background-color: #ffffff ;
+    margin:1% 0;
+    box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.page {
+    display:hide;
+}
