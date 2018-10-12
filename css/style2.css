@@ -1,12 +1,16 @@
 body {
     font-family: 'Varela Round', sans-serif;
-    font-size:18px;
+    font-size:16px;
     letter-spacing:0.5rm;
     line-height :1.8rem;
     
 }
 span {
-    
+    font-size:100%;
+    margin:0% 4px;
+    padding:2px 10px;
+    background-color: rgb(250, 66, 81);
+    color: white;
 }
 h1 {
     font-size:180;
@@ -17,11 +21,16 @@ main {
     overflow-y: hidden;
 }
 
-span {
-    color: #ffd972;
+.skills span {
+    font-size:80%;
+    margin:0% 4px;
+    border-top:2px solid black;
+    padding:2px 10px;
+    background-color: rgb(250, 66, 81);
+    color: white;
 }
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)) , url('https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-0.3.5&s=45c5cf82d2ba1d33849dcd0b678ec566&auto=format&fit=crop&w=1352&q=80');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)) , url('https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-0.3.5&s=45c5cf82d2ba1d33849dcd0b678ec566&auto=format&fit=crop&w=1352&q=80');
     background-position-y:60%;
     background-size:cover;
     height:70vh;
@@ -36,6 +45,7 @@ section {
 #description {
     position: relative;
     top:20%;
+    margin-bottom:10%;
 }
 #description h1 {
     font-size: 950%;
@@ -53,6 +63,10 @@ section {
 #who {
     padding: 2% 8%;
     text-align: center;
+    background-image: url('img/haff.png');
+    background-repeat:repeat-x;
+    background-size:cover;
+
 }
 .skills {
     padding:2% 7%;
@@ -76,12 +90,38 @@ section {
     font-size:150%;
     text-align: center;
     padding:1%;
-    border-bottom: 2px solid #ffd972;
+    border-bottom: 2px solid rgb(250, 66, 81);
     margin: auto;
     display: inline-block;
     margin-bottom:2%;
 }
+#cv {
+    color:white;
+    background-color: rgb(250, 66, 81);
+    padding:12px 30px;
+}
 
+#projects {
+    text-align: center;
+    
+}
+
+.project {
+    background-color: white;
+    margin:2% 0%;
+    /* border-top: 4px solid rgb(250, 66, 81); */
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1); 
+}
+
+.container-projects {
+    width:80%;
+    margin:auto;
+}
+.project-desc {
+    padding:1% 2%;
+    text-align: left;
+    
+}
 /* #profile {
     padding:1% 3%;
 }
