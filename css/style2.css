@@ -34,7 +34,7 @@ main {
     color: white;
 }
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)) , url('https://images.unsplash.com/photo-1540721328090-e60d3adf153a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a923382897c2ad5ab62c2e8b18b70776&auto=format&fit=crop&w=1350&q=80');
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) , url('https://images.unsplash.com/photo-1540721328090-e60d3adf153a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a923382897c2ad5ab62c2e8b18b70776&auto=format&fit=crop&w=1350&q=80');
     background-position-y:60%;
     background-size:cover;
     height:70vh;
@@ -45,8 +45,6 @@ section {
     padding:5% 2%;
     margin: auto;
 }
-
-
 
 #description {
     position: relative;
@@ -112,7 +110,7 @@ section {
 }
 
 .container-projects {
-    width:70%;
+    width:80%;
     margin:auto;
 }
 .project-desc {
