@@ -142,7 +142,7 @@ footer {
     }
     
     #description {
-        top:15%;
+        top:25%;
     }
     
     #description h1 {
@@ -169,11 +169,14 @@ footer {
     
     .project-desc {
         padding:9% 9%;
+        font-size:80%;
     }
     .project {
         margin:5% 0%;
     }
     
+    
+
     .container-projects {
         width:90%;
         margin:auto;
@@ -186,7 +189,7 @@ footer {
     }
     
     #description {
-        top:15%;
+        top:25%;
     }
     
     #description h1 {
@@ -203,6 +206,7 @@ footer {
         font-size:100%;
     }
     .project-desc {
+        font-size:80%;
         padding:4% 3%;
     }
     .project {
@@ -288,6 +292,7 @@ footer {
     }
     .project-desc {
         padding:3% 2%;
+        font-size:100%;
         text-align: left;
         vertical-align: middle;
         
