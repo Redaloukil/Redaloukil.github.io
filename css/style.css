@@ -9,7 +9,7 @@ section {
 
 header {
     padding:4%;
-    height:80vh;
+    height:60vh;
 }
 
 .container {
@@ -17,7 +17,7 @@ header {
 }
 
 #home-desc {
-    border-left:2px solid rgba(250, 66, 81 , 0.5);
+    border-left:2px solid rgba(250, 66, 81, 0.5);
     padding:2% 5%;
     position: relative;
     top:10vh;
@@ -33,14 +33,15 @@ header {
 }
 /*Projects*/
 #projects {
-    padding:4% 0%;
+    padding:0%;
 }
 .project {
-    padding:0;
+    padding:0%;
     position: relative;
 }
 .overlay {
-    position: absolute;
+    
+position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -49,12 +50,12 @@ header {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: rgba(51, 51, 51 , 0.8)
 }
-
 .project-content {
     color: white;
-    font-size: 20px;
+    font-size:110%;
+    padding:6%;
     position: relative;
     top: 50%;
     left: 50%;
@@ -62,6 +63,13 @@ header {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+.project-title {
+    font-size:200%;
+    color: 
+}
+.project-desc {
+    font-size:90%;
 }
 .project:hover .overlay {
     opacity:1;
