@@ -33,15 +33,14 @@ header {
 }
 /*Projects*/
 #projects {
-    padding:0%;
+    padding:3% 0%;
 }
 .project {
     padding:0%;
     position: relative;
 }
 .overlay {
-    
-position: absolute;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -65,8 +64,8 @@ position: absolute;
     text-align: center;
 }
 .project-title {
-    font-size:200%;
-    color: 
+    font-size:300%;
+    color: ;
 }
 .project-desc {
     font-size:90%;
@@ -79,7 +78,7 @@ position: absolute;
 
 .skill {
     padding:1%;
-    border-left:2px solid rgba(250, 66, 81 , 0.5);
+    border-left:2px solid #f4f4f4;
     margin:1% 0%;
 }
 @media (min-width: 1200px){
