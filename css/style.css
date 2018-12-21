@@ -7,6 +7,14 @@ section {
     padding:3% 0%;
 }
 
+a {
+    display: inline-block;
+    margin-left:5px; 
+    margin-right:5px;
+}
+strong {
+    color: rgba(250, 66, 81, 1);
+}
 header {
     padding:4%;
     height:60vh;
@@ -25,6 +33,7 @@ header {
 
 #home-desc h1{
     font-size:450%;
+    
 }
 
 #home-desc p{
@@ -75,7 +84,9 @@ header {
 }
 /*end project*/
 /*Skills*/
-
+#skills {
+    padding:3% 0%;
+}
 .skill {
     padding:1%;
     border-left:2px solid #f4f4f4;
