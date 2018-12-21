@@ -16,39 +16,22 @@ strong {
 }
 header {
     padding:4%;
-    height:60vh;
-}
-
-.container {
-    width:1400px !important;
+    height:75vh;
 }
 
 #home-desc {
     border-left:2px solid rgba(250, 66, 81, 0.5);
-    padding:2% 5%;
-    position: relative;
-    top:10vh;
 }
 
 #home-desc h1{
-    font-size:550%;
-    margin-bottom:1%;
-    
-}
-
-#home-desc h2{
-    font-size:200%;
-    margin-bottom:1%;
-    
 }
 
 #home-desc p{
-    font-size:130%;
     opacity:0.6;
 }
 /*Projects*/
+
 #projects {
-    padding:3% 3%;
 }
 .project {
     padding:0%;
@@ -80,12 +63,10 @@ header {
 }
 .infos {
     display: inline;
-    margin:0 3%;
     font-size:120%;
 }
 .project-title {
     font-size:300%;
-    
 }
 .project-desc {
     font-size:110%;
@@ -107,18 +88,52 @@ header {
     border-left:2px solid #f4f4f4;
     margin:20px 0%;
 }
-@media (min-width: 1200px){
-    .container {
-        min-width:1400px ;
+
+@media(max-width:767px){
+    body {
+        font-size:12px;
+    }
+    header {
+        height:50vh;
+    }
+    .infos {
+        display: inline-block;
+        margin-top:20px;
+        font-size:100%;
+    }
+    #home-desc {
+        margin:7% 0%;
+        padding:5%;
+    }
+    #home-desc h2{
+        font-size:130%;
+    }
+    #projects {
+        padding:1% 3%;
+    }
+    #projects h2{
+        font-size:120%;
+    }
+    .project {
+        
+    }
+    #skills h2{
+        font-size:130%;
     }
 }
-
-@media (min-width: 992px){}
-
-@media (min-width: 768px){
-
+@media(min-width:768px){
+    
+}
+@media(min-width:992px){
+    
+}
+@media(min-width:1200px){
+    
 }
 
-@media (min-width: 576px){
 
-}
+
+
+
+
+
