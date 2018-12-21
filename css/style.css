@@ -16,7 +16,7 @@ strong {
 }
 header {
     padding:4%;
-    
+    height:75vh;
 }
 
 #home-desc {
@@ -94,7 +94,7 @@ header {
         font-size:12px;
     }
     header {
-        height:50vh;
+        height:78vh;
     }
     .infos {
         display: inline-block;
@@ -102,6 +102,8 @@ header {
         font-size:100%;
     }
     #home-desc {
+        display: grid;
+        align-items: center;
         margin:7% 0%;
         padding:5%;
     }
