@@ -48,7 +48,7 @@ header {
 }
 /*Projects*/
 #projects {
-    padding:3% 0%;
+    padding:3% 3%;
 }
 .project {
     padding:0%;
@@ -85,10 +85,10 @@ header {
 }
 .project-title {
     font-size:300%;
-    color: ;
+    
 }
 .project-desc {
-    font-size:90%;
+    font-size:110%;
 }
 
 .project:hover .overlay {
@@ -100,12 +100,12 @@ header {
 /*end project*/
 /*Skills*/
 #skills {
-    padding:3% 0%;
+    padding:3% 3%;
 }
 .skill {
     padding:2%;
     border-left:2px solid #f4f4f4;
-    margin:3% 0%;
+    margin:20px 0%;
 }
 @media (min-width: 1200px){
     .container {
