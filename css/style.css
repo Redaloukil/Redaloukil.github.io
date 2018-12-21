@@ -81,6 +81,7 @@ header {
 .infos {
     display: inline;
     margin:0 3%;
+    font-size:120%;
 }
 .project-title {
     font-size:300%;
