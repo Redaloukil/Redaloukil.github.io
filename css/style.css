@@ -31,18 +31,19 @@ header {
 }
 
 #home-desc h1{
-    font-size:450%;
+    font-size:550%;
     margin-bottom:1%;
     
 }
 
 #home-desc h2{
+    font-size:200%;
     margin-bottom:1%;
     
 }
 
 #home-desc p{
-    font-size:100%;
+    font-size:130%;
     opacity:0.6;
 }
 /*Projects*/
@@ -76,6 +77,10 @@ header {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+.infos {
+    display: inline;
+    margin:0 3%;
 }
 .project-title {
     font-size:300%;
