@@ -63,7 +63,7 @@ header {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(51, 51, 51 , 0.8)
+    background-color: rgba(51, 51, 51 , 0.9)
 }
 .project-content {
     color: white;
@@ -84,8 +84,12 @@ header {
 .project-desc {
     font-size:90%;
 }
+
 .project:hover .overlay {
     opacity:1;
+}
+.project-link {
+    font-size:160%;
 }
 /*end project*/
 /*Skills*/
