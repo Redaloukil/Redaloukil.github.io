@@ -116,8 +116,8 @@ header {
     #projects h2{
         font-size:120%;
     }
-    .project {
-        
+    .project img{
+        height:350px;
     }
     #skills h2{
         font-size:130%;
