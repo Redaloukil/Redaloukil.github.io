@@ -102,9 +102,19 @@ header {
 
 .skill {
     font-size:100%;
-    margin:20px 0%;
+    margin:10px 0%;
 }
 
+#soft {
+    color: white;
+    padding:4% 2%;
+    line-height: 1.4rem;
+    background-color: #e74c3c;
+}
+
+.soft-skills {
+    padding:2% 0;
+}
 
 @media(max-width:767px){
     body {
@@ -295,13 +305,17 @@ header {
     }
     .skill {
         line-height: 1.5rem;
-        padding:1%;
+        padding:0% 1%;
+        font-size:80%;
     } 
     .skill p{
-        font-size:100%;
+        font-size:80%;
     }
-    #soft h2{
+    #soft h2 {
         font-size:120%;
+    }
+    #soft p {
+        line-height: 1.8rem;
     }
 
 }
