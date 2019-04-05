@@ -48,7 +48,7 @@ header {
 
 
 #home-desc p{
-    opacity:0.6;
+    opacity:1;
     line-height: 2.2rem;
 }
 /*Projects*/
@@ -117,10 +117,10 @@ header {
 
 #soft {
     margin:2% 0%;
-    color: white;
+    
     padding:4% 2%;
     line-height: 1.4rem;
-    background-color: rgba(52, 73, 94,0.9);
+   
 }
 
 #soft h2{
@@ -133,7 +133,7 @@ header {
 }
 
 .needs {
-    font-size :140% !important;
+    font-size :140% ;
 }
 
 @media(max-width:767px){
@@ -299,7 +299,7 @@ header {
     #projects p {
         font-size:100%;
         line-height: 1.8rem;
-        opacity:0.8;
+        
     }
     .project {
         padding:10px;
@@ -340,7 +340,10 @@ header {
 
 }
 @media(min-width:1200px){
-    
+    #projects > p {
+        font-size:130%;
+        line-height: 1.8rem;
+    }
 }
 
 
