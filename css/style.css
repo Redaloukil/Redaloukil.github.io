@@ -1,13 +1,17 @@
 body {
     font-family: 'Noto Sans KR', sans-serif;
-
-    font-size: 20px;
-    font-size: 2rem;
+    font-size: 16px;
+    /* font-size: 2rem; */
     line-height: 32px;
     line-height: 3.2rem;
     color: #3b3a3a;
     font-weight: 300;
     margin: 0;
+    border:20px solid rgba(250, 66, 81, 1);
+}
+.wrapper {
+    margin: auto;
+    width:80%;
 }
 
 .bg-light {
@@ -21,6 +25,27 @@ hr {
     border-top: 1px solid rgba(0,0,0,.1);
 }
 
+/* #home-desc {
+    display: grid;
+    align-items: center;
+    margin:7% 0%;
+    padding:5%;
+}
+#home-desc h1{
+    font-size:300%;
+}
+
+#home-desc h2{
+    font-size:130%;
+} */
+
+#projects {
+    padding:1% 3%;
+}
+
+#projects h2{
+    font-size:120%;
+}
 section {
     padding:3% 0%;
 }
@@ -34,24 +59,35 @@ strong {
 }
 header {
     padding:2%;
-    height:75vh;
+    height:100vh !important;
+    margin:auto;
+    text-align: center;
 }
 
 .section-title {
     opacity: 0.8;
 }
 
+#home-intro {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 30vh;
+}
 
-#home-desc {
-    border-left:3px solid rgba(250, 66, 81, 0.5);
+#home-intro h1{
+    font-size:600%;
+}
+
+#home-intro p{
+    font-size:120%;
 }
 
 
-#home-desc p{
-    opacity:1;
-    line-height: 2.2rem;
-}
-/*Projects*/
+
+
+
+
 
 
 .project {
@@ -137,213 +173,19 @@ header {
 }
 
 @media(max-width:767px){
-    body {
-        font-size:12px;
-    }
-    header {
-        height:78vh;
-    }
-    .infos {
-        display: inline-block;
-        margin-top:20px;
-        font-size:100%;
-    }
-    #home-desc {
-        display: grid;
-        align-items: center;
-        margin:7% 0%;
-        padding:5%;
-    }
-    #home-desc h1{
-        font-size:300%;
-    }
-    #home-desc h2{
-        font-size:130%;
-    }
-    #projects {
-        padding:1% 3%;
-    }
-    #projects h2{
-        font-size:120%;
-    }
-    .project img{
-        height:350px;
-    }
-    .project-title {
-        font-size:150%;
-    }
-    .project-desc {
-        font-size:100%;
-    }
     
-    .project:hover .overlay {
-        opacity:1;
-    }
-    .project-link {
-        font-size:130%;
-    }
-    #skills h2{
-        font-size:130%;
-    }
-    .skill {
-        padding:2% 3%;
-    }
-    .skill img {
-        border-bottom: 20px;
-    }
     
 }
 @media(min-width:768px){
-    body {
-        font-size:14px;
-    }
-    header {
-        height:78vh;
-    }
-    .infos {
-        display: inline-block;
-        
-        font-size:100%;
-    }
-    #home-desc {
-        display: grid;
-        align-items: center;
-        margin:7% 0%;
-        padding:3%;
-    }
-    #home-desc h1{
-        font-size:300%;
-    }
-    #home-desc h2{
-        font-size:110%;
-    }
-    #home-desc p{
-        font-size: 100%;
-    }
-    #projects {
-        padding:1% 1%;
-    }
-    #projects h2{
-        font-size:140%;
-    }
-    
-    .project img{
-        height:400px;
-    }
-    .project-title {
-        font-size:150%;
-    }
-    .project-desc {
-        font-size:100%;
-    }
-    
-    .project:hover .overlay {
-        opacity:1;
-    }
-    .project-link {
-        font-size:130%;
-    }
-    #skills h2{
-        font-size:130%;
-    }
-    #skills p {
-        font-size:100%;
-        line-height: 1.8rem;
-        opacity:0.8;
-    }
-    .skill {
-        padding:3%;
-        
-    }
+   
     
 }
 @media(min-width:992px){
-    .wrapper {
-        width:65vw;
-        margin: auto
-    }
-    .container {
-        min-width:80%;
-    }
-    body {
-        font-size:16px;
-    }
-    header {
-        height:75vh;
-    }
-    .infos {
-        display: inline-block;
-        font-size:100%;
-    }
-    #home-desc {
-        display: grid;
-        align-items: center;
-        margin:7% 0%;
-        padding:5%;
-    }
-    #home-desc h1{
-        font-size:300%;
-    }
-    #home-desc h2{
-        font-size:140%;
-    }
-    #home-desc p{
-        font-size :120%;
-    }
-    #projects {
-        padding:1% 1%;
-    }
-    #projects h2 {
-        font-size:160%;
-    }
-    #projects p {
-        font-size:100%;
-        line-height: 1.8rem;
-        
-    }
-    .project {
-        padding:10px;
-    }
-    .project img{
-        height:450px;
-    }
-    .project-title {
-        font-size:150%;
-    }
-    .project-desc {
-        font-size:100%;
-        
-    }
-    .project:hover .overlay {
-        opacity:1;
-    }
-    .project-link {
-        font-size:130%;
-    }
-    #skills h2{
-        font-size:130%;
-    }
-    .skill {
-        line-height: 1.5rem;
-        padding:0% 1%;
-        font-size:80%;
-    } 
-    .skill p{
-        font-size:80%;
-    }
-    #soft h2 {
-        font-size:120%;
-    }
-    #soft p {
-        line-height: 1.8rem;
-    }
+   
 
 }
 @media(min-width:1200px){
-    #projects > p {
-        font-size:130%;
-        line-height: 1.8rem;
-    }
+   
 }
 
 
