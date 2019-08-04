@@ -1,35 +1,56 @@
 body {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 16px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 14px;
     /* font-size: 2rem; */
     line-height: 32px;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
     color: #3b3a3a;
     font-weight: 300;
     margin: 0;
     
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-    margin:0% 10%;
-    padding:2%;
+.section-title {
+    font-size:100% !important;
+    border-bottom:2px solid rgba(250, 66, 81, 1);
+    display: inline-block;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    font-weight:700;
 }
-
-
-#nav-body {
-    height: 100vh;
-    width: 100%;
-    position:fixed;
-    border:30px solid rgba(250, 66, 81, 1);
-    z-index:100;
-}
+/* NAVBAR */
 .bg-light {
-    padding: 0% 0% !important;
+    padding: 2% 2% !important;
     position: absolute;
     top: 0;
     width: 100%;
     background-color:white!important;
+    border:1px solid #f4f4f4;
+}
+
+.navbar-light .navbar-nav .nav-link {
     
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    
+    
+    text-transform:uppercase;
+}
+.nav-link {
+    padding:5px 20px!important;
+    margin:0px 20px;
+}
+#nav-body {
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    border:20px solid rgba(250, 66, 81, 1);
+    z-index:100;
+}
+
+#contact {
+    border:1px solid #f4f4f4;
 }
 #nav-body footer {
     position:absolute;
@@ -38,16 +59,28 @@ body {
     width:100%;
     padding: 1% 0%;
     background-color: white;
-    
+    border-top:1px solid #f4f4f4;
 }
+footer .socials {
+    font-size:200% !important;
+    margin:10px 5px;
+    cursor: pointer;
+}
+/* END NAVBAR */
 
+/* HEADER */
+#down-scroll  {
+    font-size:200%;
+    margin-top:5%;
+    cursor: pointer;
+    color: rgba(250, 66, 81, 1);
+}
 #home-intro {
     margin: auto;
     text-align: center;
     position: relative;
-    top: 30vh;
+    top: 40vh;
 }
-
 #home-intro h1{
     font-size:600%;
 }
@@ -55,6 +88,35 @@ body {
 #home-intro p{
     font-size:120%;
 }
+/**/
+
+/**/
+
+
+.exp-edu {
+    padding:3% 6%;
+    border-left:1px solid rgba(250, 66, 81, 1);
+    text-align: justify;
+}
+.date {
+    font-size:80%;
+    display:inline-block;
+    padding:0px 5px;
+    font-weight:700;
+    border:1px solid rgba(250, 66, 81, 1);
+}
+
+.contact-box {
+    padding:2%;
+}
+.contact-box h3{
+    font-size: 120%;
+}
+
+.work {
+    padding: 3%;
+}
+
 
 .wrapper {
     width:70%;
@@ -69,8 +131,16 @@ hr {
     border-top: 1px solid rgba(0,0,0,.1);
 }
 
+#Contact {
+    
+}
+
 section {
-    padding:3% 0%;
+    padding:2% 0%;
+}
+
+i {
+    font-size: 150% !important;
 }
 
 a {
@@ -87,25 +157,23 @@ header {
     text-align: center;
 }
 
-.section-title {
-    font-size:100% !important;
-    border-bottom:2px solid rgba(250, 66, 81, 1);
-    display: inline-block;
-    margin-bottom: 10%;
+#resume-button {
+    padding:10px 20px;
+    background-color: rgba(250, 66, 81, 1);
+    color:white;
+    margin-top:40px;
 }
+
+#resume-button:hover {
+    cursor: pointer;
+}
+
+
 
 .portfolio-section {
-    padding:20% 0%;
+    padding:12% 0%;
+    
 }
-
-
-
-
-
-
-
-
-
 
 .project {
     padding:0%;
@@ -123,6 +191,23 @@ header {
     transition: .5s ease;
     background-color: rgba(0,123,255 , 1);
        
+}
+
+.service {
+    padding: 4%;
+    text-align: justify;
+}
+.service i {
+    color: rgba(250, 66, 81, 1);
+}
+.service h2 {
+    color: rgba(250, 66, 81, 1);
+    
+    font-size:120%;
+}
+.service p {
+    font-size: 80%;
+    line-height:1.4rem;
 }
 .project-content {
     
