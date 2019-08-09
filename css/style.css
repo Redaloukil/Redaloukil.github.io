@@ -4,11 +4,9 @@ html {
 
 body {
     font-family: 'Inconsolata', monospace;
-
     font-size: 16px;
     line-height: 1.6rem;
-    color: #3b3a3a;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -23,6 +21,7 @@ i {
 a {
     display: inline-block;
     margin-right:10px;
+    cursor: pointer;
 }
 strong {
     color: rgba(250, 66, 81, 1);
@@ -50,10 +49,6 @@ strong {
     width: 100%;
     background-color:white!important;
     border:1px solid #f4f4f4;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -174,7 +169,7 @@ header {
 
 
 .wrapper {
-    width:60%;
+    width:55%;
     margin: auto;
     text-align: left;
 }
@@ -278,7 +273,18 @@ hr {
 
 
 @media(max-width:767px){
-    
+    body {
+        font-size: 14px;
+        line-height: 1.2rem;
+    }
+    section {
+        padding:5% 0%;
+    }
+    #nav-body {
+        border:20px solid rgba(250, 66, 81, 1);
+       
+    }
+        
     
 }
 @media(min-width:768px){
