@@ -274,17 +274,80 @@ hr {
 
 @media(max-width:767px){
     body {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.2rem;
     }
     section {
         padding:5% 0%;
     }
+    .wrapper {
+        width:80%;
+        margin: auto;
+        text-align: left;
+    }
     #nav-body {
         border:20px solid rgba(250, 66, 81, 1);
        
     }
+    /* HEADER */
+    #home-intro {
+       top: 25vh;
+    }
+    #home-intro h1{
+        font-size:500%;
+    }
+
+    #home-intro p{
+        font-size:150%;
+    }
+    #down-scroll  {
+        font-size:200%;
+        margin-top:5%;
+        cursor: pointer;
+        color: rgba(250, 66, 81, 1);
+    }
+    /* END HOME */
+    /* RESUME */
+    #resume {
+        text-align: justify center;
         
+    }
+    /* PATH */
+    .exp-edu {
+        padding:3% 1%;
+        margin:6% 0%;
+    }
+    .exp {
+        padding:6%;
+    }
+    .date {
+        font-size:70%;
+    }
+    
+    .exp-edu p {
+        line-height:1.2rem;
+    }
+    /* END PATH */
+    /* SERVICES */
+    .service {
+        padding: 7%;
+        text-align: left;
+    }
+.service i {
+    color: rgba(250, 66, 81, 1);
+    font-size:60%;
+    display: inline-block;
+}
+.service h2 {
+    color: rgba(250, 66, 81, 1);
+    font-size:120%;
+}
+.service p {
+    font-size: 80%;
+    line-height:1.4rem;
+}
+/*END SERVICES */
+
     
 }
 @media(min-width:768px){
