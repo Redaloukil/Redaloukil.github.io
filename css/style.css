@@ -118,7 +118,7 @@ header {
 /* END HOME */
 /* CONTACT */
 #Contact {
-    
+    min-height:80vh;
 }
 .contact-box {
     padding:3%;
@@ -267,8 +267,8 @@ hr {
 .project-image {
     display: block;
     width: 100%;
-    height: auto;
-  }
+    height:250px;
+}
 /*END PROJECTS*/
 
 
@@ -294,7 +294,7 @@ hr {
        top: 25vh;
     }
     #home-intro h1{
-        font-size:500%;
+        font-size:400%;
     }
 
     #home-intro p{
@@ -310,6 +310,10 @@ hr {
     /* RESUME */
     #resume {
         text-align: justify center;
+        
+    }
+    #resume p {
+        font-size:80%;
         
     }
     /* PATH */
@@ -333,22 +337,84 @@ hr {
         padding: 7%;
         text-align: left;
     }
-.service i {
-    color: rgba(250, 66, 81, 1);
-    font-size:60%;
-    display: inline-block;
-}
-.service h2 {
-    color: rgba(250, 66, 81, 1);
-    font-size:120%;
-}
-.service p {
-    font-size: 80%;
-    line-height:1.4rem;
-}
-/*END SERVICES */
-
+    .service i {
+        font-size:40%;
+    }
+    .service h2 {
+        font-size:100%;
+        display: inline-block;
+    }
     
+    /*END SERVICES */
+    /* PROJECTS */
+    .project {
+        padding:10%;
+        position: relative;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(0,123,255 , 1);
+        display:none;
+    }
+    .project-content {
+        padding: 10px;
+        color: white;
+        font-size:120%;
+        padding:4%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: left;
+    }
+    .infos {
+        display: inline;
+        font-size:120%;
+        padding:1%;
+    }
+    .project-title {
+        font-size:200%;
+    }
+    .project-desc {
+        font-size:90%;
+    }
+
+    .project:hover .overlay {
+        opacity:1;
+    }
+    .project-link {
+        font-size:160%;
+        color: white;
+    }
+    .project-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    /*END PROJECTS*/
+    /* CONTACT */
+    #Contact {
+        min-height:80vh;
+    }
+    .contact-box {
+        padding:5% 8%;
+        font-size:120%;
+    }
+    .contact-box h3{
+        font-size: 100%;
+        color: rgba(250, 66, 81, 1)
+    }
+    /* END CONTACT */    
 }
 @media(min-width:768px){
    
