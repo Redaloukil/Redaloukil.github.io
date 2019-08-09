@@ -1,13 +1,31 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Heebo', sans-serif;
-    font-size: 14px;
-    /* font-size: 2rem; */
-    line-height: 32px;
+    font-family: 'Inconsolata', monospace;
+
+    font-size: 16px;
     line-height: 1.6rem;
     color: #3b3a3a;
     font-weight: 300;
     margin: 0;
-    
+}
+
+section {
+    padding:2% 0%;
+}
+
+i {
+    font-size: 150% !important;
+}
+
+a {
+    display: inline-block;
+    margin-right:10px;
+}
+strong {
+    color: rgba(250, 66, 81, 1);
 }
 
 .section-title {
@@ -18,6 +36,12 @@ body {
     text-transform: uppercase;
     font-weight:700;
 }
+
+.portfolio-section {
+    padding:12% 0%;
+    
+}
+
 /* NAVBAR */
 .bg-light {
     padding: 2% 2% !important;
@@ -33,19 +57,17 @@ body {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    
-    
     text-transform:uppercase;
 }
 .nav-link {
     padding:5px 20px!important;
-    margin:0px 20px;
+    margin:0px 10px;
 }
 #nav-body {
     height: 100vh;
     width: 100%;
     position:fixed;
-    border:20px solid rgba(250, 66, 81, 1);
+    border:30px solid rgba(250, 66, 81, 1);
     z-index:100;
 }
 
@@ -66,14 +88,18 @@ footer .socials {
     margin:10px 5px;
     cursor: pointer;
 }
+footer p {
+    font-size:80% !important;
+    
+}
 /* END NAVBAR */
 
 /* HEADER */
-#down-scroll  {
-    font-size:200%;
-    margin-top:5%;
-    cursor: pointer;
-    color: rgba(250, 66, 81, 1);
+header {
+    padding:2%;
+    height:100vh !important;
+    margin:auto;
+    text-align: center;
 }
 #home-intro {
     margin: auto;
@@ -88,30 +114,59 @@ footer .socials {
 #home-intro p{
     font-size:120%;
 }
-/**/
+#down-scroll  {
+    font-size:200%;
+    margin-top:5%;
+    cursor: pointer;
+    color: rgba(250, 66, 81, 1);
+}
+/* END HOME */
+/* CONTACT */
+#Contact {
+    
+}
+.contact-box {
+    padding:3%;
+    text-align: left;
+    font-size:1
+}
+.contact-box h3{
+    font-size: 100%;
+}
+.contact-box p{
+    font-size: 80%;
+}
+/* END CONTACT */
 
-/**/
-
-
+/* PATH */
 .exp-edu {
-    padding:3% 6%;
+    padding:7% 6%;
     border-left:1px solid rgba(250, 66, 81, 1);
     text-align: justify;
 }
+.exp {
+    padding:4%;
+}
 .date {
-    font-size:80%;
-    display:inline-block;
-    padding:0px 5px;
+    display: inline-block;
+    font-size:90%;
+    
     font-weight:700;
-    border:1px solid rgba(250, 66, 81, 1);
+    
 }
+.exp-title {
+    display: inline-block;
+    font-size:120%;
+    color: #333;
+    font-weight:700;
+    border:2px 
+}
+.exp-edu p {
+    font-size:90%;
+    line-height:1.4rem;
+}
+/* END PATH */
 
-.contact-box {
-    padding:2%;
-}
-.contact-box h3{
-    font-size: 120%;
-}
 
 .work {
     padding: 3%;
@@ -119,7 +174,7 @@ footer .socials {
 
 
 .wrapper {
-    width:70%;
+    width:60%;
     margin: auto;
     text-align: left;
 }
@@ -129,32 +184,6 @@ hr {
     margin-bottom: 1rem;
     border: 0;
     border-top: 1px solid rgba(0,0,0,.1);
-}
-
-#Contact {
-    
-}
-
-section {
-    padding:2% 0%;
-}
-
-i {
-    font-size: 150% !important;
-}
-
-a {
-    display: inline-block;
-    margin-right:10px;
-}
-strong {
-    color: rgba(250, 66, 81, 1);
-}
-header {
-    padding:2%;
-    height:100vh !important;
-    margin:auto;
-    text-align: center;
 }
 
 #resume-button {
@@ -170,13 +199,29 @@ header {
 
 
 
-.portfolio-section {
-    padding:12% 0%;
-    
+/* SERVICES */
+.service {
+    padding: 4%;
+    text-align: center;
 }
+.service i {
+    color: rgba(250, 66, 81, 1);
+    font-size:60%;
+    display: inline-block;
+}
+.service h2 {
+    color: rgba(250, 66, 81, 1);
+    font-size:120%;
+}
+.service p {
+    font-size: 80%;
+    line-height:1.4rem;
+}
+/*END SERVICES */
 
+/* PROJECTS */
 .project {
-    padding:0%;
+    padding:2%;
     position: relative;
 }
 .overlay {
@@ -190,27 +235,9 @@ header {
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0,123,255 , 1);
-       
-}
-
-.service {
-    padding: 4%;
-    text-align: justify;
-}
-.service i {
-    color: rgba(250, 66, 81, 1);
-}
-.service h2 {
-    color: rgba(250, 66, 81, 1);
-    
-    font-size:120%;
-}
-.service p {
-    font-size: 80%;
-    line-height:1.4rem;
+    display:none;
 }
 .project-content {
-    
     padding: 10px;
     color: white;
     font-size:120%;
@@ -242,37 +269,13 @@ header {
     font-size:160%;
     color: white;
 }
-/*end project*/
-/*Skills*/
-#skills {
-    padding:1% 0%;
-}
+.project-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+/*END PROJECTS*/
 
-.skill {
-    font-size:100%;
-    margin:10px 0%;
-}
-
-#soft {
-    margin:2% 0%;
-    
-    padding:4% 2%;
-    line-height: 1.4rem;
-   
-}
-
-#soft h2{
-    font-weight:300;
-    font-size:400%;
-}
-
-.soft-skills {
-    padding:2% 0;
-}
-
-.needs {
-    font-size :140% ;
-}
 
 @media(max-width:767px){
     
