@@ -103,7 +103,7 @@ header {
     top: 40vh;
 }
 #home-intro h1{
-    font-size:600%;
+    font-size:500%;
 }
 
 #home-intro p{
@@ -197,7 +197,7 @@ hr {
 /* SERVICES */
 .service {
     padding: 4%;
-    text-align: center;
+    text-align: justify;
 }
 .service i {
     color: rgba(250, 66, 81, 1);
