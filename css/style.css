@@ -106,7 +106,7 @@ header {
     font-size:500%;
 }
 
-#home-intro p{
+#home-intro h2{
     font-size:120%;
 }
 #down-scroll  {
@@ -169,7 +169,7 @@ header {
 
 
 .wrapper {
-    width:55%;
+    width:80%;
     margin: auto;
     text-align: left;
 }
@@ -273,7 +273,7 @@ hr {
 
 @media(max-width:767px){
     body {
-        font-size: 80%;
+        font-size: 90%;
         line-height: 1.2rem;
     }
     section {
@@ -284,20 +284,17 @@ hr {
         margin: auto;
         text-align: left;
     }
-    #nav-body {
-        border:20px solid rgba(250, 66, 81, 1);
-       
-    }
+    
     /* HEADER */
     #home-intro {
        top: 25vh;
     }
     #home-intro h1{
-        font-size:200%;
+        font-size:250%;
     }
 
-    #home-intro p{
-        font-size:80%;
+    #home-intro h2{
+        font-size:100%;
     }
     #down-scroll  {
         font-size:200%;
@@ -416,11 +413,283 @@ hr {
     /* END CONTACT */    
 }
 @media(min-width:768px){
-   
+    body {
+        font-size: 90%;
+        line-height: 1.2rem;
+    }
+    section {
+        padding:5% 0%;
+    }
+    .wrapper {
+        width:80%;
+        margin: auto;
+        text-align: left;
+    }
+    #nav-body {
+        border:20px solid rgba(250, 66, 81, 1);
+       
+    }
+    /* HEADER */
+    #home-intro {
+       top: 35vh;
+    }
+    #home-intro h1{
+        font-size:350%;
+    }
+
+    #home-intro h2{
+        font-size:100%;
+    }
+    /* END HOME */
+    /* RESUME */
+    #resume {
+        text-align: justify center;
+        
+    }
+    #resume p {
+        font-size:80%;
+        
+    }
+    /* PATH */
+    .exp-edu {
+        padding:3% 1%;
+        margin:6% 0%;
+    }
+    .exp {
+        padding:6%;
+        font-size:80%;
+    }
+    .date {
+        font-size:70%;
+    }
+    
+    .exp-edu p {
+        line-height:1rem;
+    }
+    /* END PATH */
+    /* SERVICES */
+    .service {
+        padding: 7%;
+        text-align:left;
+    }
+    .service i {
+        font-size:40%;
+    }
+    .service h2 {
+        font-size:80%;
+        
+    }
+    
+    /*END SERVICES */
+    /* PROJECTS */
+    .project {
+        padding:10%;
+        position: relative;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(0,123,255 , 1);
+        display:none;
+    }
+    .project-content {
+        padding: 10px;
+        color: white;
+        font-size:120%;
+        padding:4%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: left;
+    }
+    .infos {
+        display: inline;
+        font-size:120%;
+        padding:1%;
+    }
+    .project-title {
+        font-size:200%;
+    }
+    .project-desc {
+        font-size:90%;
+    }
+
+    .project:hover .overlay {
+        opacity:1;
+    }
+    .project-link {
+        font-size:160%;
+        color: white;
+    }
+    .project-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    /*END PROJECTS*/
+    /* CONTACT */
+    #Contact {
+        min-height:80vh;
+    }
+    .contact-box {
+        padding:5% 8%;
+        font-size:100%;
+    }
+    .contact-box h3{
+        font-size: 100%;
+        color: rgba(250, 66, 81, 1)
+    }
     
 }
 @media(min-width:992px){
-   
+    body {
+        font-size: 100%;
+        line-height: 1.2rem;
+    }
+    section {
+        padding:5% 0%;
+    }
+    .wrapper {
+        width:80%;
+        margin: auto;
+        text-align: left;
+    }
+    #nav-body {
+        border:20px solid rgba(250, 66, 81, 1);
+       
+    }
+    /* HEADER */
+    #home-intro {
+       top: 35vh;
+    }
+    #home-intro h1{
+        font-size:500%;
+    }
+
+    #home-intro h2{
+        font-size:150%;
+    }
+    /* END HOME */
+    /* RESUME */
+    #resume {
+        text-align:justify center;
+        
+    }
+    #resume p {
+        font-size:90%;
+        line-height : 1.9rem;
+        
+    }
+    /* PATH */
+    .exp-edu {
+        padding:3% 1%;
+        margin:6% 0%;
+    }
+    .exp {
+        padding:6%;
+        font-size:80%;
+    }
+    .date {
+        font-size:90%;
+    }
+    
+    .exp-edu p {
+        line-height:1.3rem;
+    }
+    /* END PATH */
+    /* SERVICES */
+    .service {
+        padding: 2%;
+        text-align:left;
+    }
+    .service i {
+        font-size:40%;
+    }
+    .service h2 {
+        font-size:100%;
+        
+    }
+    
+    /*END SERVICES */
+    /* PROJECTS */
+    .project {
+        padding:10%;
+        position: relative;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(0,123,255 , 1);
+        display:none;
+    }
+    .project-content {
+        padding: 10px;
+        color: white;
+        font-size:120%;
+        padding:4%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: left;
+    }
+    .infos {
+        display: inline;
+        font-size:120%;
+        padding:1%;
+    }
+    .project-title {
+        font-size:200%;
+    }
+    .project-desc {
+        font-size:90%;
+    }
+
+    .project:hover .overlay {
+        opacity:1;
+    }
+    .project-link {
+        font-size:160%;
+        color: white;
+    }
+    .project-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    /*END PROJECTS*/
+    /* CONTACT */
+    #Contact {
+        min-height:80vh;
+    }
+    .contact-box {
+        padding:5% 8%;
+        font-size:100%;
+    }
+    .contact-box h3{
+        font-size: 100%;
+        color: rgba(250, 66, 81, 1)
+    }
+    
 
 }
 @media(min-width:1200px){
