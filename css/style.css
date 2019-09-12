@@ -182,10 +182,9 @@ hr {
 }
 
 #resume-button {
-    padding:10px 20px;
     background-color: rgba(250, 66, 81, 1);
     color:white;
-    margin-top:40px;
+    
 }
 
 #resume-button:hover {
@@ -274,7 +273,7 @@ hr {
 
 @media(max-width:767px){
     body {
-        font-size: 16px;
+        font-size: 80%;
         line-height: 1.2rem;
     }
     section {
@@ -294,11 +293,11 @@ hr {
        top: 25vh;
     }
     #home-intro h1{
-        font-size:400%;
+        font-size:200%;
     }
 
     #home-intro p{
-        font-size:150%;
+        font-size:80%;
     }
     #down-scroll  {
         font-size:200%;
