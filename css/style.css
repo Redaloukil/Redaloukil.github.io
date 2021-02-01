@@ -3,11 +3,14 @@ html {
 }
 
 body {
-    font-family: 'Tahoma', monospace;
     font-size: 16px;
     line-height: 1.6rem;
     font-weight: 400;
     margin: 0;
+}
+
+.photo {
+    border-radius: 50%;
 }
 
 section {
@@ -100,15 +103,18 @@ header {
     margin: auto;
     text-align: center;
     position: relative;
-    top: 40vh;
-}
-#home-intro h1{
-    font-size:500%;
 }
 
-#home-intro h2{
-    font-size:120%;
+.home-contact {
+    margin: auto;
+    text-align: center;
+    position: relative;
 }
+
+#home-intro h1{
+    font-size:200%;
+}
+
 #down-scroll  {
     font-size:200%;
     margin-top:5%;
@@ -570,10 +576,12 @@ hr {
     }
     /* HEADER */
     #home-intro {
-       top: 35vh;
+       top: 15vh;
+       width: 50%;
     }
+
     #home-intro h1{
-        font-size:500%;
+        font-size:300%;
     }
 
     #home-intro h2{
