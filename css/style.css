@@ -27,12 +27,12 @@ a {
     cursor: pointer;
 }
 strong {
-    color: rgba(250, 66, 81, 1);
+    color: #3498db;
 }
 
 .section-title {
     font-size:100% !important;
-    border-bottom:2px solid rgba(250, 66, 81, 1);
+    border-bottom:2px solid#3498db;
     display: inline-block;
     margin-bottom: 5%;
     text-transform: uppercase;
@@ -41,7 +41,6 @@ strong {
 
 .portfolio-section {
     padding:12% 0%;
-    
 }
 
 /* NAVBAR */
@@ -65,7 +64,7 @@ strong {
     height: 100vh;
     width: 100%;
     position:fixed;
-    border:30px solid rgba(250, 66, 81, 1);
+    border:30px solid#3498db;
     z-index:100;
 }
 
@@ -99,10 +98,13 @@ header {
     margin:auto;
     text-align: center;
 }
-#home-intro {
+header .home-intro {
+    top: 15vh;
     margin: auto;
     text-align: center;
     position: relative;
+    top: 15vh;
+    width: 80%;
 }
 
 .home-contact {
@@ -111,15 +113,22 @@ header {
     position: relative;
 }
 
-#home-intro h1{
-    font-size:200%;
+.home-intro h1{
+    font-size:400%;
+}
+
+.home-intro p {
+    font-size: 20px;
+    line-height: 1.6rem;
+    text-align: justify;
+    opacity: 0.6;
 }
 
 #down-scroll  {
     font-size:200%;
     margin-top:5%;
     cursor: pointer;
-    color: rgba(250, 66, 81, 1);
+    color:#3498db;
 }
 /* END HOME */
 /* CONTACT */
@@ -142,7 +151,7 @@ header {
 /* PATH */
 .exp-edu {
     padding:7% 6%;
-    border-left:1px solid rgba(250, 66, 81, 1);
+    border-left:1px solid#3498db;
     text-align: justify;
 }
 .exp {
@@ -151,7 +160,6 @@ header {
 .date {
     display: inline-block;
     font-size:90%;
-    
     font-weight:700;
     
 }
@@ -188,7 +196,7 @@ hr {
 }
 
 #resume-button {
-    background-color: rgba(250, 66, 81, 1);
+    background-color:#3498db;
     color:white;
     
 }
@@ -205,12 +213,12 @@ hr {
     text-align: justify;
 }
 .service i {
-    color: rgba(250, 66, 81, 1);
+    color:#3498db;
     font-size:60%;
     display: inline-block;
 }
 .service h2 {
-    color: rgba(250, 66, 81, 1);
+    color:#3498db;
     font-size:120%;
 }
 .service p {
@@ -219,62 +227,7 @@ hr {
 }
 /*END SERVICES */
 
-/* PROJECTS */
-.project {
-    padding:2%;
-    position: relative;
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0,123,255 , 1);
-    display:none;
-}
-.project-content {
-    padding: 10px;
-    color: white;
-    font-size:120%;
-    padding:4%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: left;
-}
-.infos {
-    display: inline;
-    font-size:120%;
-    padding:1%;
-}
-.project-title {
-    font-size:200%;
-}
-.project-desc {
-    font-size:90%;
-}
 
-.project:hover .overlay {
-    opacity:1;
-}
-.project-link {
-    font-size:160%;
-    color: white;
-}
-.project-image {
-    display: block;
-    width: 100%;
-    height:250px;
-}
-/*END PROJECTS*/
 
 
 @media(max-width:767px){
@@ -285,28 +238,19 @@ hr {
     section {
         padding:5% 0%;
     }
-    .wrapper {
-        width:80%;
-        margin: auto;
-        text-align: left;
-    }
     
-    /* HEADER */
-    #home-intro {
-       top: 25vh;
-    }
-    #home-intro h1{
-        font-size:250%;
-    }
+    
+    
+    
 
-    #home-intro h2{
+    .home-intro h2{
         font-size:100%;
     }
-    #down-scroll  {
+    .down-scroll  {
         font-size:200%;
         margin-top:5%;
         cursor: pointer;
-        color: rgba(250, 66, 81, 1);
+        color:#3498db;
     }
     /* END HOME */
     /* RESUME */
@@ -384,26 +328,7 @@ hr {
         font-size:120%;
         padding:1%;
     }
-    .project-title {
-        font-size:200%;
-    }
-    .project-desc {
-        font-size:90%;
-    }
-
-    .project:hover .overlay {
-        opacity:1;
-    }
-    .project-link {
-        font-size:160%;
-        color: white;
-    }
-    .project-image {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    /*END PROJECTS*/
+    
     /* CONTACT */
     #Contact {
         min-height:80vh;
@@ -414,7 +339,7 @@ hr {
     }
     .contact-box h3{
         font-size: 100%;
-        color: rgba(250, 66, 81, 1)
+        color: #3498db
     }
     /* END CONTACT */    
 }
@@ -432,17 +357,13 @@ hr {
         text-align: left;
     }
     #nav-body {
-        border:20px solid rgba(250, 66, 81, 1);
+        border:20px solid #3498db;
        
     }
     /* HEADER */
     #home-intro {
        top: 35vh;
     }
-    #home-intro h1{
-        font-size:350%;
-    }
-
     #home-intro h2{
         font-size:100%;
     }
@@ -487,62 +408,6 @@ hr {
     }
     
     /*END SERVICES */
-    /* PROJECTS */
-    .project {
-        padding:10%;
-        position: relative;
-    }
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: rgba(0,123,255 , 1);
-        display:none;
-    }
-    .project-content {
-        padding: 10px;
-        color: white;
-        font-size:120%;
-        padding:4%;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: left;
-    }
-    .infos {
-        display: inline;
-        font-size:120%;
-        padding:1%;
-    }
-    .project-title {
-        font-size:200%;
-    }
-    .project-desc {
-        font-size:90%;
-    }
-
-    .project:hover .overlay {
-        opacity:1;
-    }
-    .project-link {
-        font-size:160%;
-        color: white;
-    }
-    .project-image {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    /*END PROJECTS*/
     /* CONTACT */
     #Contact {
         min-height:80vh;
@@ -553,7 +418,7 @@ hr {
     }
     .contact-box h3{
         font-size: 100%;
-        color: rgba(250, 66, 81, 1)
+        color: #3498db
     }
     
 }
@@ -571,19 +436,11 @@ hr {
         text-align: left;
     }
     #nav-body {
-        border:20px solid rgba(250, 66, 81, 1);
+        border:20px solid #3498db;
        
     }
     /* HEADER */
-    #home-intro {
-       top: 15vh;
-       width: 50%;
-    }
-
-    #home-intro h1{
-        font-size:300%;
-    }
-
+    
     #home-intro h2{
         font-size:150%;
     }
@@ -629,62 +486,7 @@ hr {
     }
     
     /*END SERVICES */
-    /* PROJECTS */
-    .project {
-        padding:10%;
-        position: relative;
-    }
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: rgba(0,123,255 , 1);
-        display:none;
-    }
-    .project-content {
-        padding: 10px;
-        color: white;
-        font-size:120%;
-        padding:4%;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: left;
-    }
-    .infos {
-        display: inline;
-        font-size:120%;
-        padding:1%;
-    }
-    .project-title {
-        font-size:200%;
-    }
-    .project-desc {
-        font-size:90%;
-    }
-
-    .project:hover .overlay {
-        opacity:1;
-    }
-    .project-link {
-        font-size:160%;
-        color: white;
-    }
-    .project-image {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    /*END PROJECTS*/
+    
     /* CONTACT */
     #Contact {
         min-height:80vh;
@@ -695,14 +497,12 @@ hr {
     }
     .contact-box h3{
         font-size: 100%;
-        color: rgba(250, 66, 81, 1)
+        color: #3498db
     }
     
 
 }
-@media(min-width:1200px){
-   
-}
+
 
 
 
