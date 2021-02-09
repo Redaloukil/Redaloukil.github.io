@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6rem;
     font-weight: 400;
     margin: 0;
@@ -31,16 +31,16 @@ strong {
 }
 
 .section-title {
-    font-size:100% !important;
-    border-bottom:2px solid#3498db;
-    display: inline-block;
+    font-size:140% !important;
     margin-bottom: 5%;
     text-transform: uppercase;
     font-weight:700;
+    text-align: center;
+    color: #3498db;
 }
 
 .portfolio-section {
-    padding:12% 0%;
+    padding:4% 0%;
 }
 
 /* NAVBAR */
@@ -56,10 +56,12 @@ strong {
 .navbar-expand-lg .navbar-nav .nav-link {
     text-transform:uppercase;
 }
+
 .nav-link {
     padding:5px 20px!important;
     margin:0px 10px;
 }
+
 #nav-body {
     height: 100vh;
     width: 100%;
@@ -80,15 +82,11 @@ strong {
     background-color: white;
     border-top:1px solid #f4f4f4;
 }
-footer .socials {
+.socials {
     font-size:200% !important;
     margin:10px 5px;
-    cursor: pointer;
 }
-footer p {
-    font-size:80% !important;
-    
-}
+
 /* END NAVBAR */
 
 /* HEADER */
@@ -120,7 +118,7 @@ header .home-intro {
 .home-intro p {
     font-size: 20px;
     line-height: 1.6rem;
-    text-align: justify;
+    text-align: center;
     opacity: 0.6;
 }
 
@@ -131,28 +129,17 @@ header .home-intro {
     color:#3498db;
 }
 /* END HOME */
-/* CONTACT */
-#Contact {
-    min-height:80vh;
-}
-.contact-box {
-    padding:3%;
-    text-align: left;
-    font-size:1
-}
-.contact-box h3{
-    font-size: 100%;
-}
-.contact-box p{
-    font-size: 80%;
-}
-/* END CONTACT */
+
 
 /* PATH */
-.exp-edu {
-    padding:7% 6%;
-    border-left:1px solid#3498db;
-    text-align: justify;
+.techs span {
+    display: inline-block;
+    background-color: #3498db;
+    color:#fff;
+    border-radius: 4px;
+    padding: 0px 5px;
+    margin-right: 5px;
+    font-size: 70%;
 }
 .exp {
     padding:4%;
@@ -164,7 +151,6 @@ header .home-intro {
     
 }
 .exp-title {
-    
     font-size:120%;
     color: #333;
     font-weight:700;
@@ -231,21 +217,14 @@ hr {
 
 
 @media(max-width:767px){
-    body {
-        font-size: 90%;
-        line-height: 1.2rem;
-    }
     section {
         padding:5% 0%;
     }
     
-    
-    
-    
-
     .home-intro h2{
         font-size:100%;
     }
+
     .down-scroll  {
         font-size:200%;
         margin-top:5%;
@@ -258,18 +237,11 @@ hr {
         text-align: justify center;
         
     }
+
     #resume p {
         font-size:80%;
-        
     }
-    /* PATH */
-    .exp-edu {
-        padding:3% 1%;
-        margin:6% 0%;
-    }
-    .exp {
-        padding:6%;
-    }
+    
     .date {
         font-size:70%;
     }
@@ -283,9 +255,11 @@ hr {
         padding: 7%;
         text-align: left;
     }
+
     .service i {
         font-size:40%;
     }
+
     .service h2 {
         font-size:100%;
         display: inline-block;
@@ -344,10 +318,7 @@ hr {
     /* END CONTACT */    
 }
 @media(min-width:768px){
-    body {
-        font-size: 90%;
-        line-height: 1.2rem;
-    }
+    
     section {
         padding:5% 0%;
     }
@@ -378,13 +349,9 @@ hr {
         
     }
     /* PATH */
-    .exp-edu {
-        padding:3% 1%;
-        margin:6% 0%;
-    }
+   
     .exp {
-        padding:6%;
-        font-size:80%;
+        padding:1%;
     }
     .date {
         font-size:70%;
@@ -423,10 +390,6 @@ hr {
     
 }
 @media(min-width:992px){
-    body {
-        font-size: 100%;
-        line-height: 1.2rem;
-    }
     section {
         padding:5% 0%;
     }
@@ -457,20 +420,14 @@ hr {
     }
     /* PATH */
     .exp-edu {
-        padding:3% 1%;
-        margin:6% 0%;
+        
     }
-    .exp {
-        padding:6%;
-        font-size:80%;
-    }
+    
     .date {
         font-size:90%;
     }
     
-    .exp-edu p {
-        line-height:1.3rem;
-    }
+    
     /* END PATH */
     /* SERVICES */
     .service {
