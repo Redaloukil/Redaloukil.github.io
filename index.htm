@@ -22,107 +22,161 @@
                                   
                                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                       <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item active">
-                                          <a class="nav-link" href="#home">Home</a>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#about">About</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#resume">About</a>
+                                            <a class="nav-link" href="#experience">Experience</a>
+                                        </li>
+                                        <!-- <li>
+
                                         </li>
                                         <li class="nav-item">
-                                                <a class="nav-link" href="#description">Path</a>
+                                            <a class="nav-link" href="#projects">Projects</a>
                                         </li>
                                         <li class="nav-item">
-                                          <a class="nav-link" href="#services">Services</a>
+                                            <a class="nav-link" href="#education">Education</a>
                                         </li>
                                         <li class="nav-item">
-                                                <a class="nav-link" href="#projects">Projects</a>
-                                              </li>
-                                              
-                                        <li class="nav-item">
-                                                <a class="nav-link" href="#Contact">Contact</a>
+                                            <a class="nav-link" href="#education">Contact me</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a id="resume-button" class="nav-link" href="./reda_loukil_cv.pdf">Download CV</a>
-                                        </li>
+                                            <a class="nav-link" id="resume-button" href="./reda_loukil_cv.pdf" target="_blank">Download CV</a>
+                                        </li> -->
                                     </ul>
                                     </div>
                             </div>
                         </nav>
         </section>
         <div class="wrapper">
-                <header id="home">
-                        <div id="home-intro">
+                <header id="about">
+                        <div class="home-intro">
                             <img class="photo" src="./reda_loukil.jpg" height="200px"/>
-                            <h1>Hi ,I'm <strong>Reda Loukil</strong></h1>
+                            <h1>Hi, I'm <strong>Reda Loukil</strong></h1>
                             <p>Reda is a dedicated, enthusiastic, long life learner software developer with +2 years experience, I spent my journey creating responsive complex web application, maintaining applications and fixing bugs, contributing and building valuable features for clients, moving with work in a progressive,iterative and agile way, with personal appreciation for problem solving and successful solution design.</p>
+                            <div class="home-links">
+                                <div class="text-center">
+                                    <a class="socials" href="https://www.linkedin.com/in/reda-loukil-85bb34149/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                    <a class="socials" href="https://github.com/Redaloukil"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                                    <a class="socials" href="https://twitter.com/reda_loukil"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
                         </div>
+                       
                 </header>
-                <section id="resume" class="portfolio-section">
+                <section class="portfolio-section"  id="experience">
                     <div class="container">
-                            <h1 class="section-title">About me</h1>
+                            <h1 class="section-title">Experience</h1>
+                            <div class="exp">
+                                            <h3 class="exp-title">Dockflow - Frontend Developer</h3>
+                                            <h4 class="exp-date">December 2019 - Currently working </h4>
+                                            
+                                            <p>Dockflow is a combination of tools and solutions for maritime logistics digitalization,it helps businesses collaborating and
+                                                    being in touch with data sources that have relation with their shipment, As a developer in dockflow I contributed in :</p>
+                                            <ul>
+                                                    <li>Fast delivery of solutions to improve shipment transport management.</li>
+                                                    <li>Building tools for containers tracking.</li>
+                                                    <li>Building chart and visibility tools to help client decision making.</li>
+                                                    <li>Continuous development and integration of features.</li>    
+                                                    <li>Fix data quality issues and mistakes.</li>
+                                                        
+                                            </ul>
+                                            <div class="techs">
+                                                Techs : <span>Javascript</span> <span>Angular</span> <span>Node.js</span> <span>MYSQL</span> <span>Elastic Search</span> <span>Laravel</span><span>Gitlab</span> <span>Docker</span> 
+                                            </div>
+                                            
+                                        
+                            </div>
+                            <div class="exp">
+                                            <h2 class="exp-title">Alivex Delivery Oran</h2>
+                                            <h3 class="exp-date">Mai 2019 - July 2019 </h3>
+                                            
+                                            <p>User Interface integration of facial regognition software using openCV and PyQt , Design a desktop application for taking standerized photos.</p>
+                                            <div class="techs">
+                                                Techs : <span>Python</span> <span>Django</span> <span>Django Rest Framework</span> <span>Postgresql</span>
+                                            </div>
+                            </div>
+                            <div class="exp">
+                                            <h2 class="exp-title">Freelance — Full Stack Developer (Django, Python, React).</h2>
+                                            <h3 class="exp-date">June 2017 to August 2019</h3>
+                                            
+                                            <p>Help multiple clients on Upwork, Musta9il, Freelance to build their software solutions, as freelance software developer, my
+                                                work consisted of :</p>
+                                            <ul>
+                                                <li>Understanding client requirements and helping clients translate business needs to software solutions
+                                                    (websites/applications).</li>
+                                                <li>Collaborating with designers to implement mockups for new platforms as well as fixing User experience issues and web
+                                                    platform responsiveness</li>
+                                            </ul>
+                                            <div class="techs">
+                                                Techs : <span>Python</span> <span>Django</span> <span>Django Rest Framework</span> <span>Postgresql</span> <span>HTML</span> <span>CSS</span> <span>JQuery</span>
+                                            </div>
+                            </div>
+                    </div>
+                </section>
+                <!-- <section class="portfolio-section"  id="projects">
+                    <div class="container">
+                        <h1 class="section-title">Projects</h1>
+                        <div class="project">
+                            <h3 class="project-title">CHU COVID-19 patients app</h3>
+                            <p>Built and maintained the backend application for an open-source project for an Algerian hospital, the Backend application was done with Node.js/Express, authentication was handled by Firebase Auth, file storage was initially done in Firebase's Cloud File Store, and the data was persisted in a MongoDB database.</p>
+                        </div>
+                        <div class="project">
+                            <h3 class="project-title">Greedy randomised adaptative search procedure on GPGPU ( CUDA ) </h3>
+                            <p>This Bachelor degree i'm learning about big concepts in algorithmes and data structures , databases ,Information system , networking.</p>
+                        </div>
+                        <div class="project">
+                                <h3 class="project-title">Alivex Delivery Application</h3>
+                                <p>This Bachelor degree i'm learning about big concepts in algorithmes and data structures , databases ,Information system , networking.</p>
+                        </div>
+                        <div class="project">
+                                    <h3 class="project-title">Mintad Trip Suggester </h3>
+                                    <p>Thanks to FreeCodeCamp Foundation which helps me to improve my web development skills,in this courses i learned.</p>
+                        </div>
+                        <div class="project">
+                            <h3 class="project-title">Sid Alhouari </h3>
+                            <p>Thanks to FreeCodeCamp Foundation which helps me to improve my web development skills,in this courses i learned.</p>
+                        </div>
+
+                </section>
+                <section class="portfolio-section"  id="education">
+                    <div class="container">
+                        <h1 class="section-title">Education</h1>
+                        <div class="edu">
+                                <h3 class="edu-title">Bachelor Degree - University of Oran 1</h3>
+                                <h4 class="edu-date">November 2016 - July 2019</h4>
+                                <p>This Bachelor degree i'm learning about big concepts in algorithmes and data structures , databases ,Information system , networking.</p>
+                        </div>
+                        <div class="edu">
+                                    <h3 class="edu-title">Online Learning</h3>
+                                    <h4 class="edu-date">June 2016 - July 2019</h4>
+                                    <p>Thanks to FreeCodeCamp Foundation which helps me to improve my web development skills,in this courses i learned.</p>
+                        </div>
+                </section>
+                <section class="portfolio-section"  id="contact">
+                    <div class="container">
+                        <h1 class="section-title">Contact</h1>
+                        <div class="edu">
+                                <h3 class="edu-title">Bachelor Degree - University of Oran 1</h3>
+                                <h4 class="edu-date">November 2016 - July 2019</h4>
+                                <p>This Bachelor degree i'm learning about big concepts in algorithmes and data structures , databases ,Information system , networking.</p>
+                        </div>
+                        <div class="edu">
+                                    <h3 class="edu-title">Online Learning</h3>
+                                    <h4 class="edu-date">June 2016 - July 2019</h4>
+                                    <p>Thanks to FreeCodeCamp Foundation which helps me to improve my web development skills,in this courses i learned.</p>
+                        </div>
+                </section> -->
+                <!-- <section id="resume" class="portfolio-section">
+                    <div class="container">
+                            <h1 class="section-title">SKILLS</h1>
                             <div class="row">
                                 <div class="col-md-12">
-                                        <p>I have many years experience as a web developer, creating responsive complex web application of a high quality as a freelancer agencies collaborator. I have also obtained an eye for detail and appreciation for software design and architecture, knowledge of integrating and developing server-side and client-side apps, as well as knowing how to efficiently project manage and work with clients and colleagues successfully.</p>
-                                            <div class="row">
-                                                    <div class="col-sm-4">
-                                                            <p><strong>Name:</strong> Reda Loukil</p>
-                                                            <p><strong>Citizenship:</strong> Algerian</p>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                            <p><strong>Age:</strong> 23</p>
-                                                            <p><strong>Residence:</strong> Oran</p>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                            <p><strong>Email:</strong> loukil.red@gmail.com</p>
-                                                            <p><strong>Phone-number:</strong> +213552092560</p>
-                                                    </div>
-                                            </div>
+                                    <p>Reda is a dedicated, enthusiastic, long life learner software developer with +2 years experience, I spent my journey creating responsive complex web application, maintaining applications and fixing bugs, contributing and building valuable features for clients, moving with work in a progressive,iterative and agile way, with personal appreciation for problem solving and successful solution design.</p>
                                 </div>
                             </div>
                     </div>
-                </section>
-                <section class="portfolio-section"  id="description">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                    <h1 class="section-title">Experience</h1>
-                                    <div class="container exp-edu">
-                                        <div class="exp">
-                                                    <h3 class="exp-title">IHT Full Stack Developer</h3>
-                                                    <h4 class="date">Mai 2019 - July 2019 </h4>
-                                                    <p>User Interface integration of facial regognition software using openCV and PyQt , Design a desktop application for taking standerized photos.</p>
-                                        </div>
-                                        <div class="exp">
-                                            <h3 class="exp-title">Freelancer</h3>
-                                            <h4 class="date">June 2017 - August 2019</h4>
-                                            <p>I help my clients get the adequate software products ,I worked with multiple agencies to build ,design ,maintain their websites and application</p>
-                                        </div>
-                                        
-                                       
-                                        
-                                    </div>
-                            </div>
-                            <div class="col-md-6">
-                                    <h1 class="section-title">Education</h1>
-                                    <div class="container exp-edu">
-                                        <div class="exp">
-                                            <h3 class="exp-title">Bachelor Degree</h3>
-                                            <h4 class="date">November 2016 - July 2019</h4>
-                                            <p>This Bachelor degree i'm learning about big concepts in algorithmes and data structures , databases ,Information system , networking.</p>
-                                        </div>
-                                        <div class="exp">
-                                                <h3 class="exp-title">Online Learning</h3>
-                                                <h4 class="date">June 2016 - July 2019</h4>
-                                                <p>Thanks to FreeCodeCamp Foundation which helps me to improve my web development skills,in this courses i learned.</p>
-                                        </div>
-                                        
-                                    </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-                </section>
+                </section> -->
                 </div>
                 </main>
                
