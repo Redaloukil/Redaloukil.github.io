@@ -40,7 +40,7 @@ strong {
 }
 
 .portfolio-section {
-    padding:4% 0%;
+    padding:10% 0%;
 }
 
 /* NAVBAR */
@@ -139,29 +139,56 @@ header .home-intro {
     border-radius: 4px;
     padding: 0px 5px;
     margin-right: 5px;
-    font-size: 70%;
+    font-size: 60%;
+    font-weight: 700;
 }
+
+
+/* END PATH */
+
 .exp {
-    padding:4%;
-}
-.date {
-    display: inline-block;
-    font-size:90%;
-    font-weight:700;
-    
+    padding: 3% 0;
 }
 .exp-title {
-    font-size:120%;
+    font-size:100%;
     color: #333;
     font-weight:700;
     border:2px 
 }
-.exp-edu p {
+
+.exp-date {
+    display: inline-block;
+    font-size:90%;
+    opacity:0.6;
+}
+
+.exp p, .exp ul li{
     font-size:90%;
     line-height:1.4rem;
 }
-/* END PATH */
 
+
+.edu {
+    padding: 1% 0;
+}
+
+.edu-title {
+    font-size:100%;
+    color: #333;
+    font-weight:700;
+    border:2px 
+}
+
+.edu-date {
+    display: inline-block;
+    font-size:90%;
+    opacity:0.6;
+}
+
+.edu p{
+    font-size:90%;
+    line-height:1.4rem;
+}
 
 .work {
     padding: 3%;
@@ -350,9 +377,6 @@ hr {
     }
     /* PATH */
    
-    .exp {
-        padding:1%;
-    }
     .date {
         font-size:70%;
     }
