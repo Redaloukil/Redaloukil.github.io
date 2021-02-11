@@ -46,11 +46,12 @@ strong {
 /* NAVBAR */
 .bg-light {
     padding: 2% 2% !important;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
-    background-color:white!important;
-    border:1px solid #f4f4f4;
+    z-index: 100;
+    background-color:#fff!important;
+    border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -63,28 +64,22 @@ strong {
 }
 
 #nav-body {
-    height: 100vh;
     width: 100%;
+    z-index: 100;
     position:fixed;
-    border:30px solid#3498db;
-    z-index:100;
+    background-color: #f4f4f4;
+
 }
 
 #contact {
     border:1px solid #f4f4f4;
 }
-#nav-body footer {
-    position:absolute;
-    bottom: 0;
-    color:black;
-    width:100%;
-    padding: 1% 0%;
-    background-color: white;
-    border-top:1px solid #f4f4f4;
-}
+
+
 .socials {
     font-size:200% !important;
     margin:10px 5px;
+    cursor: pointer;
 }
 
 /* END NAVBAR */
@@ -97,11 +92,10 @@ header {
     text-align: center;
 }
 header .home-intro {
-    top: 15vh;
     margin: auto;
     text-align: center;
     position: relative;
-    top: 15vh;
+    top: 5vh;
     width: 80%;
 }
 
@@ -150,7 +144,7 @@ header .home-intro {
     padding: 3% 0;
 }
 .exp-title {
-    font-size:100%;
+    font-size:130%;
     color: #333;
     font-weight:700;
     border:2px 
@@ -167,6 +161,31 @@ header .home-intro {
     line-height:1.4rem;
 }
 
+.project {
+    padding: 3% 0%;
+}
+
+.project-title {
+    font-size:100%;
+    color: #333;
+    font-weight:700;
+    border:2px 
+}
+.project-description {
+    font-size:80%;
+    line-height:1.3rem;
+}
+
+.project-techs span {
+    display: inline-block;
+    background-color: #3498db;
+    color:#fff;
+    border-radius: 4px;
+    padding: 0px 5px;
+    margin-right: 5px;
+    font-size: 60%;
+    font-weight: 700;
+}
 
 .edu {
     padding: 1% 0;
@@ -218,8 +237,6 @@ hr {
     cursor: pointer;
 }
 
-
-
 /* SERVICES */
 .service {
     padding: 4%;
@@ -262,7 +279,6 @@ hr {
     /* RESUME */
     #resume {
         text-align: justify center;
-        
     }
 
     #resume p {
@@ -354,10 +370,6 @@ hr {
         margin: auto;
         text-align: left;
     }
-    #nav-body {
-        border:20px solid #3498db;
-       
-    }
     /* HEADER */
     #home-intro {
        top: 35vh;
@@ -421,10 +433,6 @@ hr {
         width:80%;
         margin: auto;
         text-align: left;
-    }
-    #nav-body {
-        border:20px solid #3498db;
-       
     }
     /* HEADER */
     
