@@ -11,10 +11,7 @@ body {
 
 .photo {
     border-radius: 50%;
-}
-
-section {
-    padding:2% 0%;
+    height: 250px;
 }
 
 i {
@@ -32,26 +29,46 @@ strong {
 
 .section-title {
     font-size:140% !important;
-    margin-bottom: 5%;
+    margin-bottom: 16px;
     text-transform: uppercase;
     font-weight:700;
     text-align: center;
+    text-decoration: underline;
     color: #3498db;
+}
+/* GENERAL STYLE CLASSES */
+
+.wrapper {
+    padding-top: 50px;
+    width:80%;
+    margin: auto;
+    text-align: left;
+    
 }
 
 .portfolio-section {
-    padding:10% 0%;
+    padding: 60px 0px;
 }
+
+.mobile-menu-hamburger {
+    justify-content: end !important;
+}
+
+/* END WRAPPER */
 
 /* NAVBAR */
 .bg-light {
-    padding: 1% 2% !important;
+    padding: 10px 14px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
-    background-color:#fff!important;
+    background-color:#fff;
     border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.navbar-expand-lg .navbar-nav {
+    margin: auto;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -59,8 +76,9 @@ strong {
 }
 
 .nav-link {
-    padding:5px 20px!important;
+    padding:5px 10px;
     margin:0px 10px;
+    font-size: 14px;
 }
 
 #nav-body {
@@ -86,16 +104,17 @@ strong {
 
 /* HEADER */
 header {
-    padding:2%;
-    height:100vh !important;
+    padding-top: 120px;
+    height:70vh;
     margin:auto;
     text-align: center;
+    margin-bottom: 200px;
 }
 header .home-intro {
     margin: auto;
     text-align: center;
     position: relative;
-    top: 5vh;
+    top: 1vh;
     width: 80%;
 }
 
@@ -106,7 +125,8 @@ header .home-intro {
 }
 
 .home-intro h1{
-    font-size:400%;
+    margin-top: 22px;
+    font-size:300%;
 }
 
 .home-intro p {
@@ -140,6 +160,7 @@ header .home-intro {
 
 /* END PATH */
 
+/* EXPERIENCE */
 .exp {
     padding: 3% 0;
 }
@@ -161,6 +182,8 @@ header .home-intro {
     line-height:1.4rem;
 }
 
+/* END EXPERIENCE */
+/* Projects */
 .project {
     padding: 3% 0%;
 }
@@ -187,6 +210,7 @@ header .home-intro {
     font-weight: 700;
 }
 
+/* end projects */
 .edu {
     padding: 1% 0;
 }
@@ -213,20 +237,6 @@ header .home-intro {
     padding: 3%;
 }
 
-
-.wrapper {
-    width:80%;
-    margin: auto;
-    text-align: left;
-}
-
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid rgba(0,0,0,.1);
-}
-
 #resume-button {
     background-color:#3498db;
     color:white;
@@ -237,134 +247,98 @@ hr {
     cursor: pointer;
 }
 
-/* SERVICES */
-.service {
-    padding: 4%;
-    text-align: justify;
-}
-.service i {
-    color:#3498db;
-    font-size:60%;
-    display: inline-block;
-}
-.service h2 {
-    color:#3498db;
-    font-size:120%;
-}
-.service p {
-    font-size: 80%;
-    line-height:1.4rem;
-}
-/*END SERVICES */
-
-
-
 
 @media(max-width:767px){
-    section {
-        padding:5% 0%;
+    .wrapper {
+        width: 90%;
     }
-    
-    .home-intro h2{
-        font-size:100%;
-    }
-
-    .down-scroll  {
-        font-size:200%;
-        margin-top:5%;
-        cursor: pointer;
-        color:#3498db;
-    }
+    /* HOME */
+        .photo {
+            height: 150px;
+        }
+        header {
+            padding-top: 100px;
+            margin-bottom: 200px;
+        }
+        
+        .home-intro h1{
+            margin-top: 50px;
+            font-size:150%;
+        }
+        
+        .home-intro p {
+            font-size: 14px;
+            line-height: 1.2rem;
+            text-align: center;
+            opacity: 0.6;
+        }
     /* END HOME */
-    /* RESUME */
-    #resume {
-        text-align: justify center;
+    /* EXPERIENCE */
+    .exp {
+        padding: 20px 0;
+    }
+    .exp-title {
+        font-size:80%;
+        font-weight:700;
+    }
+    
+    .exp-date {
+        display: inline-block;
+        font-size:70%;
+        opacity:0.6;
     }
 
-    #resume p {
-        font-size:80%;
-    }
-    
-    .date {
+    .exp p, .exp ul li{
         font-size:70%;
-    }
-    
-    .exp-edu p {
         line-height:1.2rem;
     }
-    /* END PATH */
-    /* SERVICES */
-    .service {
-        padding: 7%;
-        text-align: left;
-    }
-
-    .service i {
-        font-size:40%;
-    }
-
-    .service h2 {
-        font-size:100%;
-        display: inline-block;
-    }
-    
-    /*END SERVICES */
+    /* END EXPERIENCE */
     /* PROJECTS */
     .project {
-        padding:10%;
-        position: relative;
+        padding: 3% 0;
     }
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: rgba(0,123,255 , 1);
-        display:none;
+    .project-title {
+        font-size:80%;
     }
-    .project-content {
-        padding: 10px;
-        color: white;
-        font-size:120%;
-        padding:4%;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: left;
-    }
-    .infos {
-        display: inline;
-        font-size:120%;
-        padding:1%;
+    .project-description {
+        font-size:70%;
+        line-height:1.2rem;
     }
     
+    .project-techs span {
+        font-size: 50%;
+    }
+  
+    /* END PROJECTS */
+    /* EDUCATION */
+    .edu {
+        padding: 1% 0;
+    }
+
+    .edu-title {
+        font-size:80%; 
+    }
+
+    .edu-date {
+        display: inline-block;
+        font-size:70%;
+        opacity:0.6;
+    }
+
+    .edu p{
+        font-size:70%;
+        line-height:1.2rem;
+    }
+    /* END EDUCATION */
     /* CONTACT */
-    #Contact {
-        min-height:80vh;
-    }
-    .contact-box {
-        padding:5% 8%;
-        font-size:120%;
-    }
-    .contact-box h3{
+    
+    .contact-box{
         font-size: 100%;
         color: #3498db
     }
     /* END CONTACT */    
 }
 @media(min-width:768px){
-    
-    section {
-        padding:5% 0%;
-    }
     .wrapper {
         width:80%;
         margin: auto;
@@ -426,9 +400,6 @@ hr {
     
 }
 @media(min-width:992px){
-    section {
-        padding:5% 0%;
-    }
     .wrapper {
         width:80%;
         margin: auto;
@@ -476,18 +447,6 @@ hr {
     
     /*END SERVICES */
     
-    /* CONTACT */
-    #Contact {
-        min-height:80vh;
-    }
-    .contact-box {
-        padding:5% 8%;
-        font-size:100%;
-    }
-    .contact-box h3{
-        font-size: 100%;
-        color: #3498db
-    }
     
 
 }
