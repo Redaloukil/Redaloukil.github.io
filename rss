@@ -6,7 +6,7 @@
         <description>This is my portfolio RSS feed</description>
         <item>
           <title>How my web browser is distracting me</title>
-          <link>https://portfolio-blog-starter.vercel.app/blog/spaces-vs-tabs</link>
+          <link>https://portfolio-blog-starter.vercel.app/blog/how-my-web-browser-distracts-me</link>
           <description>Keeping my browser window clean helped me get more productive and less distracted</description>
           <pubDate>Sun, 22 Oct 2023 00:00:00 GMT</pubDate>
         </item>
