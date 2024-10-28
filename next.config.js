@@ -1,7 +1,8 @@
+// next.config.js
 module.exports = {
-    output: 'export',
-    images: {
-      unoptimized: true,
-    },
-    basePath: '/<your-repo-name>',
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+  basePath: '/Redaloukil.github.io',
 };

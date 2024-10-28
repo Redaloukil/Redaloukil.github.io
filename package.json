@@ -1,6 +1,6 @@
 {
   "private": true,
-  "homepage": "https://<your-username>.github.io/<your-repo-name>/",
+  "homepage": "https://redaloukil.github.io/Redaloukil.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
