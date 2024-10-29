@@ -4,5 +4,5 @@ module.exports = {
   images: {
     unoptimized: true,
   },
-  basePath: '/Redaloukil.github.io',
+  basePath: '',
 };
