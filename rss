@@ -5,10 +5,10 @@
         <link>https://portfolio-blog-starter.vercel.app</link>
         <description>This is my portfolio RSS feed</description>
         <item>
-          <title>Demystifying micro frontend pattern</title>
+          <title>Demystifying micro frontend pattern - Part 1</title>
           <link>https://portfolio-blog-starter.vercel.app/blog/demystifying-micro-frontends</link>
           <description>Keeping my browser window clean helped me get more productive and less distracted</description>
-          <pubDate>Invalid Date</pubDate>
+          <pubDate>Tue, 13 May 2025 00:00:00 GMT</pubDate>
         </item>
 <item>
           <title>How my web browser is distracting me</title>
