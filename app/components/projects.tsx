@@ -12,7 +12,7 @@ export function Projects() {
               <Link className=" text-blue-500" href={`https://chromewebstore.google.com/detail/punctuate/ndpeffmempnfhldemeddiefagnjpijmd`} target='_blank'>
                 {post.metadata.title}
               </Link>
-              <p className='text-neutral-700 dark:text-neutral-300 leading-relaxed'>{post.metadata.description}</p>
+              <p className='text-neutral-700 leading-relaxed'>{post.metadata.description}</p>
             </div>
 
         ))}

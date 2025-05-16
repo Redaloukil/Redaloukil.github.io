@@ -4,64 +4,61 @@ publishedAt: '2025-05-13'
 summary: 'Keeping my browser window clean helped me get more productive and less distracted'
 ---
 
-I heard of the term **microservices** in the beginning of 2016, when the term started surfacing in blog posts and talks by companies adopting the new idea of breaking monolithic applications into smaller chunks to reduce complexity and divide the application in such a way that it becomes easy to manage in both development and operation cycles. 
-
+I heard of the term **microservices** in the beginning of 2016, when the term started surfacing in blog posts and talks by companies adopting the new idea of breaking monolithic applications into smaller chunks to reduce complexity and divide it in such a way that it becomes easy to manage in both development and operation cycles. 
 The idea is very intuitive: instead of working on a big monolithic application, divide the application into smaller, less complex chunks (or microservices) that can be developed independently.
 
-# Micro-this, Micro-that? Why not micro-frontend then?
+<Image
+  src="https://cdn-images-1.medium.com/v2/resize:fit:1200/1*s2LNQlstlCajQf9E5nk80g.jpeg"
+  alt="Microservice everywhere"
+  width={300}
+  height={300}
+/>
 
-Bigger, more responsibility and complexity — and frontend applications are not an exception to this rule. 
+## Micro-this, Micro-that? Why not micro-frontend then?
+
 
 As frontend applications grow in scale and complexity, managing them becomes increasingly challenging. Take platforms like **Facebook** or **Google** — these are massive applications composed of many thousands of UI components and thousands of user flows. 
-
-Now imagine trying to maintain such a system with a single team and in a single scope. It quickly becomes unmanageable.
+Now imagine trying to maintain such a system with a single team, single scope and single devops cycle. It quickly becomes unmanageable.
 
 **Micro Frontend (MFE)** in core is the concept of breaking a large monolithic frontend into smaller, manageable pieces — a frontend architecture pattern where a user interface application is **split into smaller, self-contained units** which can be developed and deployed independently.
 
 The decomposition of the frontend application can be based on aspects that can be defined either by feature, domain, or any other aspect.
 
-> Micro frontends are not a concrete technology.  
-> They’re an alternative organizational and architectural approach.  
-> — *Michael Geers, Micro Frontends in Action*
+> Micro frontends are not a concrete technology, they’re an alternative organizational and architectural approach.  
+[— *Michael Geers, Micro Frontends in Action](https://www.manning.com/books/micro-frontends-in-action)
 
-# How to decompose my frontend application?
+## How to decompose my frontend application?
 
-It is important to note that the **micro frontend** is not specifying or aligning on the way the application should be decomposed, but really leaves it up to the application and its complexity — meaning that the concept is not tied to a framework or a specific implementation.
+It is important to note that **micro frontend** pattern is not specifying or aligning on the way the application should be decomposed, but really leaves it up to the application and its complexity — meaning that the concept is not tied to a framework or a specific implementation.
 
-For the sake of illustrating the decomposition logic, let's imagine a typical e-commerce website, `www.mycommerce.com`, that we want to break into many micro frontends. 
-
+For the sake of illustrating the decomposition logic, let's imagine a typical e-commerce website, "mycommerce.com", that we want to break into many micro frontends. 
 The website is composed of a home page, a page to select products based on search and recommendations, a product cart page, and a checkout section.  
 
 The following are examples of potential decomposition cases:
 
-## 1. By Business Domain (Domain-Driven Design)
+- ### 1. By Business Domain (Domain-Driven Design)
+    - **Product selection**: Domain for product search pages, recommendations, and customer cart.  
+    - **Checkout process**: Domain for checkout management, payments, bonuses, and promo codes.  
+    - **Customer service**: Domain for receiving client details, managing sales deliveries, etc.
 
-- **Product selection**: Domain for product search pages, recommendations, and customer cart.  
-- **Checkout process**: Domain for checkout management, payments, bonuses, and promo codes.  
-- **Customer service**: Domain for receiving client details, managing sales deliveries, etc.
+- ### 2. By Pages
+    - Home page  
+    - Product search page  
+    - Product cart page  
+    - Checkout page
 
-## 2. By Pages
+- ### 3. By UI Components
+    The application is decomposed into components that are developed separately, for example:
+    - Header  
+    - Footer  
+    - Product card  
+    - Search bar  
+    - Payment popup  
+    - etc.
 
-- Home page  
-- Product search page  
-- Product cart page  
-- Checkout page
-
-## 3. By UI Components
-
-The application is decomposed into components that are developed separately, for example:
-
-- Header  
-- Footer  
-- Product card  
-- Search bar  
-- Payment popup  
-- etc.
-
-## 4. By Technology
-
-If the application is supposed to be made out of many technologies — for example:
-
-- The home page is made with **React.js**  
-- The product search page is made with **Angular**, etc.
+- ### 4. By Technology
+    If the application is supposed to be made out of many technologies — for example:
+    - The home page is made with **React.js**  
+    - The product search page is made with **Angular v16** , etc.
+    - The checkout page is made with **Angular v12**
 
