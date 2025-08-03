@@ -1,0 +1,24 @@
+---
+title: 'A compiler written with language it compiles'
+publishedAt: '2025-08-03'
+---
+
+Lately, I’ve been keeping an eye on the development of [typescript-go](https://devblogs.microsoft.com/typescript/typescript-native-port/). It’s still early, but the idea is to get better performance and lower memory usage. That caught my attention. If it works out, I think it could noticeably speed up my dev environment and reduce build times.
+
+Out of curiosity, I started comparing the new compiler with the existing one. The new version is being written in Go. But the current TypeScript compiler? It’s written in… TypeScript. Wait, what? A compiler written in the same language it compiles?
+That made me pause for a second, how that works ? 
+
+### The idea of self-hosting
+
+Self-hosting means a compiler can compile its own source code. If I have a compiler for Language L (version 1), and I write a new version (version 2), I can use version 1 to compile version 2. That’s how many compilers evolve over time.
+The TypeScript team followed this path. The earliest versions of the compiler were written in JavaScript. Eventually, they rewrote the compiler in TypeScript itself, which made it self-hosting.
+But then the next question hits me: if a language needs a compiler, and that compiler is eventually self-hosted, how was the first version built?
+
+### The idea of bootstrapping
+
+That’s where bootstrapping comes in. You need some other language to write the first version of the compiler. The very first TypeScript compiler was bootstrapped in JavaScript. Only later did it become self-hosting.
+In the case of tsgo, it’s a fresh re-implementation of the compiler in Go. It’s not bootstrapping TypeScript itself, but rather rebuilding the compiler using another language. So Go becomes the base language here kind of like hitting reset and trying a different approach.
+
+For reference, here’s one of the earliest versions of the TypeScript compiler, back when it was still in JavaScript:  
+
+[https://github.com/microsoft/TypeScript/blob/214df64e287804577afa1fea0184c18c40f7d1ca/bin/tc.js](https://github.com/microsoft/TypeScript/blob/214df64e287804577afa1fea0184c18c40f7d1ca/bin/tc.js)
